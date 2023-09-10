@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureBlobStorage", "AzureBlobStorage\AzureBlobStorage.csproj", "{868C7FB3-10BF-479C-A999-63F4A37E45BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDB", "CosmosDB\CosmosDB.csproj", "{420C03E3-E980-429A-BE9B-993935FDE97D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{868C7FB3-10BF-479C-A999-63F4A37E45BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{868C7FB3-10BF-479C-A999-63F4A37E45BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{868C7FB3-10BF-479C-A999-63F4A37E45BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{420C03E3-E980-429A-BE9B-993935FDE97D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{420C03E3-E980-429A-BE9B-993935FDE97D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{420C03E3-E980-429A-BE9B-993935FDE97D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{420C03E3-E980-429A-BE9B-993935FDE97D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
