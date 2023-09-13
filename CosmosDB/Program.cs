@@ -1,10 +1,17 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
 using CosmosDB;
 using Microsoft.Azure.Cosmos;
 
 Console.WriteLine("Hello, World!");
 
-string _connString = "AccountEndpoint=https://learncosmosdb2392.documents.azure.com:443/;AccountKey=ehsb5GNxM1QhPp0Vmxvvya5ZWH47wZfCOfpIrUKuVghWvT7PEhIJLEMbnwfL92Z1bprp1W0UWuPXACDbTOv3cQ==;";
+var client = new SecretClient(new Uri("https://az-204keyvault.vault.azure.net/"), new DefaultAzureCredential());
+
+var secretValue = await client.GetSecretAsync("cosmosDBConnString");
+
+
+string _connString = secretValue.Value.Value;
 
 var cosmosDBClient = new CosmosClient(_connString);
 
